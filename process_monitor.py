@@ -4,7 +4,7 @@ SUSPICIOUS_PATHS = ["/tmp", "/var/tmp", "/dev/shm"]
 
 def inspect_processes():
     findings = []
-    for proc in psutil.process_inter(['pid', 'name', 'exe']
+    for proc in psutil.process_inter(['pid', 'name', 'exe']):
         try:
             exe_path = proc.info['exe']
             if exe_path:
