@@ -18,4 +18,4 @@ def run_hids():
         time.sleep(5)
 
 if __name__ == "__main__":
-    runs_hids() 
+    run_hids() 
