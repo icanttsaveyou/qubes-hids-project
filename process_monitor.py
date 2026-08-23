@@ -16,6 +16,6 @@ def inspect_processes():
                             "name": proc.info['name'],
                             "path": exe_path
                         })   
-        except 9psutil.NoSuchProcess, psutil.AccessDenied):
+        except psutil.NoSuchProcess, psutil.AccessDenied):
             continue 
     return findings
