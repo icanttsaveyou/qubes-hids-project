@@ -23,7 +23,7 @@ def build_baseline(directories):
                 file_hash = calculate_sha256(full_path)
                 if file_hash: 
                     baseline[full_path] = file_hash
-    with open(CHECKSUM_DB. "w") as f:
+    with open(CHECKSUM_DB, "w") as f:
          json.dump(baseline, f, indent=4)
     print("Baseline saved.")
 
