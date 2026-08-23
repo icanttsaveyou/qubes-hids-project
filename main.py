@@ -10,7 +10,7 @@ def run_hids():
     build_baseline(MONITOR_PATHS)
     print("HIDS Engine running! Checking every 5 seconds...")
 
-    while True
+    while True:
         file_alerts = verify_integrity()
         for alert in file_alerts:
             print(json.dumps({"severity": "CRITICAL", "event": alert}))
