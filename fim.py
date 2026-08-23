@@ -19,7 +19,7 @@ def build_baseline(directories):
     for directory in directories:
         for root, _, files in os.walk(directory):
             for file in files:
-                full_path = os.path.join(root, file}
+                full_path = os.path.join(root, file)
                 file_hash = calculate_sha256(full_path)
                 if file_hash: 
                     baseline[full_path] = file_hash
