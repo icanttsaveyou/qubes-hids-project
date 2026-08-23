@@ -9,7 +9,7 @@ def inspect_processes():
             exe_path = proc.info['exe']
             if exe_path:
                 for bad_path in SUSPICIOUS_PATHS:
-                    if exe_path.startswith(bad_path);
+                    if exe_path.startswith(bad_path):
                         findings.append({
                             "type": "SUSPICIOUS_PROCESS",
                             "pid": proc.info['pid']
